@@ -15,6 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register';
+//import '/home/neosoft/AutomationTesting/CypressFramework/CypressAutomation/node_modules/cypress-mochawesome-reporter/cucumberSupport';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
