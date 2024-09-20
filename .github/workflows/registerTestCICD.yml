@@ -1,29 +1,14 @@
-name: Regression End-to-end tests
-on: 
-  push:
-    branches:
-      - main  # Change this to your main branch if necessary
-
+name:  Regression End-to-end tests
+on: push
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
-
+    runs-on: 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Install Dependencies
-        run: npm install
-
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          record: true  # Set to true if you want to record test results
-          key: ${{ secrets.CYPRESS_RECORD_KEY }}  # Your Cypress project key if recording
-          video: true  # Ensure videos are recorded
-          group: 'CI'  # Optional: Group your runs for better visibility
-        env:
-          CI: true  # Set CI environment variable to true
-
-      - name: Run Tests
-        run: npm run test:registerTest  # Running your specific test command here
+            command: npm run:test:registerTest
