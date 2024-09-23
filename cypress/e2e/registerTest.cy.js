@@ -9,17 +9,11 @@ it("Register Flow",()=>{
     registerObj.openURL()
     registerObj.enterFirstName(registerData.firstName)
     registerObj.enterlastName(registerData.lastName)
-    registerObj.enterEmail(Math.random().toString(5).substring(2)+"@gmail.com")
+    registerObj.enterEmail(Math.random().toString(5).substring(2)+"@gmail.com")//DOnt hardcode and dont used gmail
     registerObj.enterTelephone(registerData.telephone)
     registerObj.enterPassword(registerData.password)
     registerObj.selectCheckbox()
     registerObj.clickOnContinue()
-
-
-
-
-
-
 })
 
 

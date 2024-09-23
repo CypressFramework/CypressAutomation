@@ -4,7 +4,9 @@ export class homePage {
     weblocators = {
 
         search_input: '.form-control.input-lg',
-        click_search: '.input-group-btn > .btn',
+        click_search: '.input-group-btn > .btn',  //Find the element by using all types of locator
+         // healing locator get the knowledge
+         //sql lite db  config in cypress
         product: 'img[title="MacBook"]',
         addtocart: 'Add to Cart',
 
