@@ -16,7 +16,7 @@ jobs:
       - name: Send email notification
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: www.gmail.com  # Replace with your SMTP server
+          server_address: smtp.gmail.com  # Replace with your SMTP server
           server_port: 465                  # Common port for SMTP
           username: ${{ secrets.CypressFramework }}  # Your email username
           password: ${{ secrets.CypressFrameworkPassword }}  # Your email password
