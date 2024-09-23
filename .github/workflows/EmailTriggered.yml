@@ -17,8 +17,8 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com  # Replace with your SMTP server
-          server_port: 465                  # Common port for SMTP
-          username: ${{ secrets.CypressFramework }}  # Your email username
+          server_port: 587                  # Common port for SMTP
+          username: ${{ secrets. }}  # Your email username
           password: ${{ secrets.CypressFrameworkPassword }}  # Your email password
           subject: 'GitHub Action Triggered'  # Subject of the email
           body: 'A GitHub Action was triggered on the main branch.'  # Email body
