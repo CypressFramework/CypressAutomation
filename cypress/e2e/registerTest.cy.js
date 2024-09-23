@@ -1,6 +1,6 @@
 import { registerPage } from "../Pages/RegisterPage";
 const registerObj= new registerPage()
-import registerData from '/home/neosoft/AutomationTesting/CypressFramework/CypressAutomation/cypress/fixtures/registerData.json'
+import registerData from '../fixtures/registerData.json'
 
 describe("Registering the user",()=>{
 

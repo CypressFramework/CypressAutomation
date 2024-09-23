@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:addToCartTest": "npx cypress run --spec /home/neosoft/AutomationTesting/CypressFramework/CypressAutomation/cypress/e2e/addToCartTest.cy.js",
-    "test:registerTest": "npx cypress run --spec /home/neosoft/AutomationTesting/CypressFramework/CypressAutomation/cypress/e2e/registerTest.cy.js",
+    "test:addToCartTest": "npx cypress run --spec ./cypress/e2e/addToCartTest.cy.js",
+    "test:registerTest": "npx cypress run --spec ./cypress/e2e/registerTest.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

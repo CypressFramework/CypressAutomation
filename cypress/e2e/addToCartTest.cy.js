@@ -1,6 +1,6 @@
-import { homePage } from "/home/neosoft/AutomationTesting/CypressFramework/CypressAutomation/cypress/Pages/homePage.js"
+import { homePage } from "../Pages/homePage"
 const homePageObj = new homePage()
-import testData from '/home/neosoft/AutomationTesting/CypressFramework/CypressAutomation/cypress/fixtures/testData.json'
+import testData from '../fixtures/testData.json'
 
 
 describe(' test automation', () => {
