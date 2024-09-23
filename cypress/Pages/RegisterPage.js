@@ -49,6 +49,7 @@ export class registerPage {
     clickOnContinue() {
         cy.get(this.weblocators.continue).click()
     }
+    
 
    
 
