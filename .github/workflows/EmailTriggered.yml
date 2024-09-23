@@ -19,7 +19,7 @@ jobs:
           server_address: www.gmail.com  # Replace with your SMTP server
           server_port: 587                   # Common port for SMTP
           username: ${{ secrets.CypressFramework }}  # Your email username
-          password: ${{ secrets.9545tyui@# }}  # Your email password
+          password: ${{ secrets.CypressFrameworkPassword }}  # Your email password
           subject: 'GitHub Action Triggered'  # Subject of the email
           body: 'A GitHub Action was triggered on the main branch.'  # Email body
           to: ubhedaladinath04@gmail.com            # Recipient's email address
