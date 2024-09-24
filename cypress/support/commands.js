@@ -30,3 +30,9 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get('#input-password').type(password)
     cy.get('input.btn.btn-primary').click()
 })
+
+Cypress.Commands.add('generateRandomEmail', () => {
+    const randomEmail = `user${Math.floor(Math.random() * 10000)}@test.com`;
+    return randomEmail;
+  });
+  
